@@ -1,0 +1,23 @@
+     1                                  ; ----------------------------------------------------------------------------------------
+     2                                  ; Writes "Hello, World" to the console using only system calls. Runs on 64-bit Linux only.
+     3                                  ; To assemble and run:
+     4                                  ;
+     5                                  ;     nasm -felf64 hello.asm && ld hello.o && ./a.out
+     6                                  ; ----------------------------------------------------------------------------------------
+     7                                  
+     8                                            global    _start
+     9                                  
+    10                                            section   .text
+    11 00000000 B801000000              _start:   mov       rax, 1                  ; system call for write
+    12 00000005 BF01000000                        mov       rdi, 1                  ; file handle 1 is stdout
+    13 0000000A 48BE-                             mov       rsi, message            ; address of string to output
+    13 0000000C [0000000000000000] 
+    14 00000014 BA0D000000                        mov       rdx, 13                 ; number of bytes
+    15 00000019 0F05                              syscall                           ; invoke operating system to do the write
+    16 0000001B B83C000000                        mov       rax, 60                 ; system call for exit
+    17 00000020 4831FF                            xor       rdi, rdi                ; exit code 0
+    18 00000023 0F05                              syscall                           ; invoke operating system to exit
+    19                                  
+    20                                            section   .data
+    21 00000000 48656C6C6F2C20576F-     message:  db        "Hello, World", 10      ; note the newline at the end
+    21 00000009 726C640A           
