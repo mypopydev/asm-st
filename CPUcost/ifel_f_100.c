@@ -1,0 +1,142 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+#define x(n)	case n: goto L ## n
+
+int
+main(int argc, char **argv)
+{
+	int n = argc > 1 ? atoi(argv[1]) : 1000000000;
+	int a = argc > 2 ? atoi(argv[2]) : 0;
+	int b = argc > 3 ? atoi(argv[3]) : 0;
+
+	n /= 10;
+	switch (argc > 4 ? atoi(argv[4]) : 0) {
+		x(0);   x(1);   x(2);   x(3);   x(4);
+		x(5);   x(6);   x(7);   x(8);   x(9);
+		x(10);  x(11);  x(12);  x(13);  x(14);
+		x(15);  x(16);  x(17);  x(18);  x(19);
+		x(20);  x(21);  x(22);  x(23);  x(24);
+		x(25);  x(26);  x(27);  x(28);  x(29);
+		x(30);  x(31);  x(32);  x(33);  x(34);
+		x(35);  x(36);  x(37);  x(38);  x(39);
+		x(40);  x(41);  x(42);  x(43);  x(44);
+		x(45);  x(46);  x(47);  x(48);  x(49);
+		x(50);  x(51);  x(52);  x(53);  x(54);
+		x(55);  x(56);  x(57);  x(58);  x(59);
+		x(60);  x(61);  x(62);  x(63);  x(64);
+		x(65);  x(66);  x(67);  x(68);  x(69);
+		x(70);  x(71);  x(72);  x(73);  x(74);
+		x(75);  x(76);  x(77);  x(78);  x(79);
+		x(80);  x(81);  x(82);  x(83);  x(84);
+		x(85);  x(86);  x(87);  x(88);  x(89);
+		x(90);  x(91);  x(92);  x(93);  x(94);
+		x(95);  x(96);  x(97);  x(98);  x(99);
+	}
+	do {
+		asm("DUMMY1:");
+		L0:	if (b < 0) a++; else a--;
+		L1:	if (b < 0) a++; else a--;
+		L2:	if (b < 0) a++; else a--;
+		L3:	if (b < 0) a++; else a--;
+		L4:	if (b < 0) a++; else a--;
+		L5:	if (b < 0) a++; else a--;
+		L6:	if (b < 0) a++; else a--;
+		L7:	if (b < 0) a++; else a--;
+		L8:	if (b < 0) a++; else a--;
+		L9:	if (b < 0) a++; else a--;
+		L10:	if (b < 0) a++; else a--;
+		L11:	if (b < 0) a++; else a--;
+		L12:	if (b < 0) a++; else a--;
+		L13:	if (b < 0) a++; else a--;
+		L14:	if (b < 0) a++; else a--;
+		L15:	if (b < 0) a++; else a--;
+		L16:	if (b < 0) a++; else a--;
+		L17:	if (b < 0) a++; else a--;
+		L18:	if (b < 0) a++; else a--;
+		L19:	if (b < 0) a++; else a--;
+		L20:	if (b < 0) a++; else a--;
+		L21:	if (b < 0) a++; else a--;
+		L22:	if (b < 0) a++; else a--;
+		L23:	if (b < 0) a++; else a--;
+		L24:	if (b < 0) a++; else a--;
+		L25:	if (b < 0) a++; else a--;
+		L26:	if (b < 0) a++; else a--;
+		L27:	if (b < 0) a++; else a--;
+		L28:	if (b < 0) a++; else a--;
+		L29:	if (b < 0) a++; else a--;
+		L30:	if (b < 0) a++; else a--;
+		L31:	if (b < 0) a++; else a--;
+		L32:	if (b < 0) a++; else a--;
+		L33:	if (b < 0) a++; else a--;
+		L34:	if (b < 0) a++; else a--;
+		L35:	if (b < 0) a++; else a--;
+		L36:	if (b < 0) a++; else a--;
+		L37:	if (b < 0) a++; else a--;
+		L38:	if (b < 0) a++; else a--;
+		L39:	if (b < 0) a++; else a--;
+		L40:	if (b < 0) a++; else a--;
+		L41:	if (b < 0) a++; else a--;
+		L42:	if (b < 0) a++; else a--;
+		L43:	if (b < 0) a++; else a--;
+		L44:	if (b < 0) a++; else a--;
+		L45:	if (b < 0) a++; else a--;
+		L46:	if (b < 0) a++; else a--;
+		L47:	if (b < 0) a++; else a--;
+		L48:	if (b < 0) a++; else a--;
+		L49:	if (b < 0) a++; else a--;
+		L50:	if (b < 0) a++; else a--;
+		L51:	if (b < 0) a++; else a--;
+		L52:	if (b < 0) a++; else a--;
+		L53:	if (b < 0) a++; else a--;
+		L54:	if (b < 0) a++; else a--;
+		L55:	if (b < 0) a++; else a--;
+		L56:	if (b < 0) a++; else a--;
+		L57:	if (b < 0) a++; else a--;
+		L58:	if (b < 0) a++; else a--;
+		L59:	if (b < 0) a++; else a--;
+		L60:	if (b < 0) a++; else a--;
+		L61:	if (b < 0) a++; else a--;
+		L62:	if (b < 0) a++; else a--;
+		L63:	if (b < 0) a++; else a--;
+		L64:	if (b < 0) a++; else a--;
+		L65:	if (b < 0) a++; else a--;
+		L66:	if (b < 0) a++; else a--;
+		L67:	if (b < 0) a++; else a--;
+		L68:	if (b < 0) a++; else a--;
+		L69:	if (b < 0) a++; else a--;
+		L70:	if (b < 0) a++; else a--;
+		L71:	if (b < 0) a++; else a--;
+		L72:	if (b < 0) a++; else a--;
+		L73:	if (b < 0) a++; else a--;
+		L74:	if (b < 0) a++; else a--;
+		L75:	if (b < 0) a++; else a--;
+		L76:	if (b < 0) a++; else a--;
+		L77:	if (b < 0) a++; else a--;
+		L78:	if (b < 0) a++; else a--;
+		L79:	if (b < 0) a++; else a--;
+		L80:	if (b < 0) a++; else a--;
+		L81:	if (b < 0) a++; else a--;
+		L82:	if (b < 0) a++; else a--;
+		L83:	if (b < 0) a++; else a--;
+		L84:	if (b < 0) a++; else a--;
+		L85:	if (b < 0) a++; else a--;
+		L86:	if (b < 0) a++; else a--;
+		L87:	if (b < 0) a++; else a--;
+		L88:	if (b < 0) a++; else a--;
+		L89:	if (b < 0) a++; else a--;
+		L90:	if (b < 0) a++; else a--;
+		L91:	if (b < 0) a++; else a--;
+		L92:	if (b < 0) a++; else a--;
+		L93:	if (b < 0) a++; else a--;
+		L94:	if (b < 0) a++; else a--;
+		L95:	if (b < 0) a++; else a--;
+		L96:	if (b < 0) a++; else a--;
+		L97:	if (b < 0) a++; else a--;
+		L98:	if (b < 0) a++; else a--;
+		L99:	if (b < 0) a++; else a--;
+		asm("DUMMY2:");
+	} while (--n > 0);
+	printf("a = %d\n", a);
+	return 0;
+}

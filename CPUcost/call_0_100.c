@@ -1,0 +1,141 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+#define x(n)	case n: goto L ## n
+
+int
+main(int argc, char **argv)
+{
+	int n = argc > 1 ? atoi(argv[1]) : 1000000000;
+	int a = argc > 2 ? atoi(argv[2]) : 0;
+
+	n /= 10;
+	switch (argc > 3 ? atoi(argv[3]) : 0) {
+		x(0);   x(1);   x(2);   x(3);   x(4);
+		x(5);   x(6);   x(7);   x(8);   x(9);
+		x(10);  x(11);  x(12);  x(13);  x(14);
+		x(15);  x(16);  x(17);  x(18);  x(19);
+		x(20);  x(21);  x(22);  x(23);  x(24);
+		x(25);  x(26);  x(27);  x(28);  x(29);
+		x(30);  x(31);  x(32);  x(33);  x(34);
+		x(35);  x(36);  x(37);  x(38);  x(39);
+		x(40);  x(41);  x(42);  x(43);  x(44);
+		x(45);  x(46);  x(47);  x(48);  x(49);
+		x(50);  x(51);  x(52);  x(53);  x(54);
+		x(55);  x(56);  x(57);  x(58);  x(59);
+		x(60);  x(61);  x(62);  x(63);  x(64);
+		x(65);  x(66);  x(67);  x(68);  x(69);
+		x(70);  x(71);  x(72);  x(73);  x(74);
+		x(75);  x(76);  x(77);  x(78);  x(79);
+		x(80);  x(81);  x(82);  x(83);  x(84);
+		x(85);  x(86);  x(87);  x(88);  x(89);
+		x(90);  x(91);  x(92);  x(93);  x(94);
+		x(95);  x(96);  x(97);  x(98);  x(99);
+	}
+	do {
+		asm("DUMMY1:");
+		L0:	func();
+		L1:	func();
+		L2:	func();
+		L3:	func();
+		L4:	func();
+		L5:	func();
+		L6:	func();
+		L7:	func();
+		L8:	func();
+		L9:	func();
+		L10:	func();
+		L11:	func();
+		L12:	func();
+		L13:	func();
+		L14:	func();
+		L15:	func();
+		L16:	func();
+		L17:	func();
+		L18:	func();
+		L19:	func();
+		L20:	func();
+		L21:	func();
+		L22:	func();
+		L23:	func();
+		L24:	func();
+		L25:	func();
+		L26:	func();
+		L27:	func();
+		L28:	func();
+		L29:	func();
+		L30:	func();
+		L31:	func();
+		L32:	func();
+		L33:	func();
+		L34:	func();
+		L35:	func();
+		L36:	func();
+		L37:	func();
+		L38:	func();
+		L39:	func();
+		L40:	func();
+		L41:	func();
+		L42:	func();
+		L43:	func();
+		L44:	func();
+		L45:	func();
+		L46:	func();
+		L47:	func();
+		L48:	func();
+		L49:	func();
+		L50:	func();
+		L51:	func();
+		L52:	func();
+		L53:	func();
+		L54:	func();
+		L55:	func();
+		L56:	func();
+		L57:	func();
+		L58:	func();
+		L59:	func();
+		L60:	func();
+		L61:	func();
+		L62:	func();
+		L63:	func();
+		L64:	func();
+		L65:	func();
+		L66:	func();
+		L67:	func();
+		L68:	func();
+		L69:	func();
+		L70:	func();
+		L71:	func();
+		L72:	func();
+		L73:	func();
+		L74:	func();
+		L75:	func();
+		L76:	func();
+		L77:	func();
+		L78:	func();
+		L79:	func();
+		L80:	func();
+		L81:	func();
+		L82:	func();
+		L83:	func();
+		L84:	func();
+		L85:	func();
+		L86:	func();
+		L87:	func();
+		L88:	func();
+		L89:	func();
+		L90:	func();
+		L91:	func();
+		L92:	func();
+		L93:	func();
+		L94:	func();
+		L95:	func();
+		L96:	func();
+		L97:	func();
+		L98:	func();
+		L99:	func();
+		asm("DUMMY2:");
+	} while (--n > 0);
+	printf("a = %d\n", a);
+	return 0;
+}
